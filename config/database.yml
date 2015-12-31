@@ -13,3 +13,7 @@ development:
 test:
   <<: *defaults
   database: gecx_test
+  
+production:  
+  <<: *defaults
+  database: gecx_production
