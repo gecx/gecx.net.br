@@ -11,6 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20160103115042) do
+
+  create_table "agents", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.string   "role",       limit: 255
+    t.string   "foto",       limit: 255
+    t.boolean  "active"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  create_table "slides", force: :cascade do |t|
+    t.string   "description",       limit: 255, null: false
+    t.string   "foto_file_name",    limit: 255
+    t.string   "foto_content_type", limit: 255
+    t.integer  "ranking",           limit: 4
+    t.boolean  "active"
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
+  end
 
 end

@@ -1,0 +1,15 @@
+defaults: &defaults
+  access_key_id: AKIAITH6IJT6JTWGXO6Q
+  secret_access_key: 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
+
+development:
+  <<: *defaults
+  bucket: gecx-dev
+
+test:
+  <<: *defaults
+  bucket: gecx-tes
+
+production:
+  <<: *defaults
+  bucket: gecx-pro

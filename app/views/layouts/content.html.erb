@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="author"      content="Luciano Bezerra">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Grupo Espírita Chico Xavier</title>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" >
+    <%= javascript_include_tag 'application' %>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <%= csrf_meta_tags %>
+</head>
+<body>
+    <div class="container">
+      <div id="header">
+        <div class="header clearfix">
+          <nav>
+            <ul class="nav nav-pills pull-left">
+              <li role="presentation" class="active"><%= link_to("Home", root_url) %></li>
+              <li role="presentation"><%= link_to "Centro Espírita", whats_path %></li>
+              <li role="presentation"><%= link_to "Colaboradores", agents_path %> </li>
+              <li role="presentation"><%= link_to("Eventos", events_path) %></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+        <div class="logo">
+          <%= link_to(image_tag("logo2.png"), root_url) %>
+        </div>
+          
+          <div style="text-align: justify">
+            "O Espiritismo é chamado a desempenhar imenso papel na Terra. 
+            Ele  reformará  a  legislação  ainda  tão  freqüentemente  contrária  às  leis 
+            divinas;  retificará  os  erros  da  História;  restaurará  a  religião  do  Cristo, 
+            que  se  tornou,  nas  mãos  dos  padres,  objeto  de  comércio  e  de  tráfico  vil; 
+            instituirá a verdadeira religião, a religião natural, a que parte do coração 
+            e vai diretamente a Deus, sem se deter nas franjas de uma sotaina, ou nos 
+            degraus do altar. Extinguirá para sempre o ateísmo e o materialismo, aos 
+            quais  alguns  homens  foram  levados  pelos  incessantes  abusos  dos  que  se 
+            dizem ministros de Deus, (...)". <br/>
+            Obras Póstumas, Allan Kardec, O Futuro do Espiritismo, Um Espírito.
+          </div>  
+        </div>
+        <div class="col-sm-9">
+          <%= yield %>
+        </div>
+      </div>
+      <footer>GILDERLAN VAI COLOCAR O COMERCIAL DA EMPRESA DELE AQUI</footer>
+    </div>
+  </body>
+</html>
