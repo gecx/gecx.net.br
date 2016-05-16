@@ -13,3 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+
+$(document).ready(function(){
+  $("#carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 10,
+    nav: true
+  });
+});

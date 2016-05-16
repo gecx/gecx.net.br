@@ -6,9 +6,4 @@ Rails.application.routes.draw do
   get "whats",  to: "whats#index"
   get "events", to: "events#index"
 
-
-  namespace :admin do
-    resources :slides
-      root :to => "home#index"
-  end  
 end
