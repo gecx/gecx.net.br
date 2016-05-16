@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
-  layout 'content'
+  #layout 'content'
   def index
-    
+
   end
 end

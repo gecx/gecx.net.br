@@ -1,5 +1,5 @@
 class SlidesController < ApplicationController
   def index
-    @slides = Slide.all
+    #@slides = Slide.all
   end
 end

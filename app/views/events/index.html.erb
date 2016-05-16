@@ -1,14 +1,71 @@
 <div class="row">
-  <p style="font-size: 22px; padding-top: 10px;">Entrega de Cestas Básicas 2013</p>
-  <div class="row">
-    <div class="col-sm-4"><%= image_tag("sb2013/001.jpg") %></div>
-    <div class="col-sm-4"><%= image_tag("sb2013/002.jpg") %></div>
-    <div class="col-sm-4"><%= image_tag("sb2013/003.jpg") %></div>
+  <p style="font-size: 22px; padding-top: 10px;">Entrega de Cestas Básicas</p>
+  <div class="carrossel">
+    <div id="cestas" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#cestas" data-slide-to="0" class="active"></li>
+        <li data-target="#cestas" data-slide-to="1"></li>
+        <li data-target="#cestas" data-slide-to="2"></li>
+        <li data-target="#cestas" data-slide-to="3"></li>
+        <li data-target="#cestas" data-slide-to="4"></li>
+        <li data-target="#cestas" data-slide-to="5"></li>
+        <li data-target="#cestas" data-slide-to="6"></li>
+        <li data-target="#cestas" data-slide-to="7"></li>
+        <li data-target="#cestas" data-slide-to="8"></li>
+        <li data-target="#cestas" data-slide-to="9"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item"><%= image_tag 'cestas/001.jpg' %> </div>
+        <div class="item"><%= image_tag 'cestas/002.jpg' %> </div>
+        <div class="item"><%= image_tag 'cestas/003.jpg' %> </div>
+        <div class="item"><%= image_tag 'cestas/004.jpg' %> </div>
+        <div class="item"><%= image_tag 'cestas/005.jpg' %> </div>
+        <div class="item active"><%= image_tag 'cestas/006.jpg' %> </div>
+        <div class="item"><%= image_tag 'cestas/007.jpg' %> </div>
+        <div class="item"><%= image_tag 'cestas/008.jpg' %> </div>
+        <div class="item"><%= image_tag 'cestas/009.jpg' %> </div>
+        <div class="item"><%= image_tag 'cestas/010.jpg' %> </div>
+      </div>
+      <a class="left carousel-control" href="#cestas" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="right carousel-control" href="#cestas" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
   </div>
-  <div class="row">
-    <div class="col-sm-4"><%= image_tag("sb2013/004.jpg") %></div>
-    <div class="col-sm-4"><%= image_tag("sb2013/005.jpg") %></div>
-    <div class="col-sm-4"><%= image_tag("sb2013/006.jpg") %></div>
+</div>
+
+<div class="row">
+  <p style="font-size: 22px; padding-top: 10px;">Confraternizações do Grupo</p>
+  <div class="carrossel">
+    <div id="festas" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#festas" data-slide-to="0" class="active"></li>
+        <li data-target="#festas" data-slide-to="1"></li>
+        <li data-target="#festas" data-slide-to="2"></li>
+        <li data-target="#festas" data-slide-to="3"></li>
+        <li data-target="#festas" data-slide-to="4"></li>
+        <li data-target="#festas" data-slide-to="5"></li>
+        <li data-target="#festas" data-slide-to="6"></li>
+        <li data-target="#festas" data-slide-to="7"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active"><%= image_tag 'festas/001.jpg' %> </div>
+        <div class="item"><%= image_tag 'festas/002.jpg' %> </div>
+        <div class="item"><%= image_tag 'festas/003.jpg' %> </div>
+        <div class="item"><%= image_tag 'festas/004.jpg' %> </div>
+        <div class="item"><%= image_tag 'festas/005.jpg' %> </div>
+        <div class="item"><%= image_tag 'festas/006.jpg' %> </div>
+        <div class="item"><%= image_tag 'festas/007.jpg' %> </div>
+        <div class="item"><%= image_tag 'festas/008.jpg' %> </div>
+      </div>
+      <a class="left carousel-control" href="#festas" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="right carousel-control" href="#festas" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
   </div>
-  <p style="font-size: 22px; padding-top: 10px;">Entrega de Cestas Básicas 2014</p>
 </div>

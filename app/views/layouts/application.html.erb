@@ -25,72 +25,20 @@
     <div class="container">
       <div id="header">
         <div class="header clearfix">
-          <nav>
+          <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <ul class="nav nav-pills pull-left">
-              <li role="presentation" class="active"><%= link_to("Home", root_url) %></li>
-              <li role="presentation"><%= link_to "Centro Espírita", whats_path %></li>
-              <li role="presentation"><%= link_to "Colaboradores", agents_path %> </li>
-              <li role="presentation"><%= link_to("Eventos", events_path) %></li>
+              <li role="presentation" ><%= link_to("Home", root_url) %></li>
+              <li role="presentation"><%= link_to "O que é um Centro Espírita", whats_path %></li>
+              <li role="presentation"><%= link_to "Nossos Dirigentes", agents_path %> </li>
+              <li role="presentation"><%= link_to("Atividades", events_path) %></li>
             </ul>
           </nav>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-sm-3">
-        <div class="logo">
-          <%= link_to(image_tag("logo2.png"), root_url) %>
-        </div>
-          
-          <div style="text-align: justify">
-            "O Espiritismo é chamado a desempenhar imenso papel na Terra. 
-            Ele  reformará  a  legislação  ainda  tão  freqüentemente  contrária  às  leis 
-            divinas;  retificará  os  erros  da  História;  restaurará  a  religião  do  Cristo, 
-            que  se  tornou,  nas  mãos  dos  padres,  objeto  de  comércio  e  de  tráfico  vil; 
-            instituirá a verdadeira religião, a religião natural, a que parte do coração 
-            e vai diretamente a Deus, sem se deter nas franjas de uma sotaina, ou nos 
-            degraus do altar. Extinguirá para sempre o ateísmo e o materialismo, aos 
-            quais  alguns  homens  foram  levados  pelos  incessantes  abusos  dos  que  se 
-            dizem ministros de Deus, (...)". <br/>
-            Obras Póstumas, Allan Kardec, O Futuro do Espiritismo, Um Espírito.
-          </div>  
-        </div>
-        <div class="col-sm-9">
-          <%= yield %>
-        </div>
+      <div class="row"  style="padding-top: 35px;">
+        <%= yield %>
       </div>
-      <div class="row">
-        <div class="col-sm-5">
-          <div class="fb-page" data-href="https://www.facebook.com/gecx.iguatu" data-width="450" data-height="590" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/gecx.iguatu"><a href="https://www.facebook.com/gecx.iguatu">Grupo Espírita Chico Xavier</a></blockquote></div></div>          
-        </div>
-        <div class="col-sm-7">
-          <p style="font-size: 14pt; font-weight: bold;">Nossa Programação</p>
-          <div class="alert alert-success" role="alert">
-            <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
-            Terça-Feira: <br/>
-            <p style="text-indent: 10pt;">19:00 a 20:00h: Atendimento Fraterno (livre)</p>
-            <p style="text-indent: 10pt;">20:00 a 21:00h: Estudo do Livro dos Espíritos (livre)</p>
-
-            <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
-            Quinta-Feira:
-            <p style="text-indent: 10pt;">20:00 a 21:00h: Reunião Mediúnica (restrita)</p>
-
-            <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
-            Sexta-Feira:
-            <p style="text-indent: 10pt;">19:00 a 20:00h: Atendimento Fraterno (livre)</p>
-            <p style="text-indent: 10pt;">20:00 a 21:00h: Estudo do Evangelho e Terapia de Passes (livre)</p>
-          </div>
-          <p style="font-size: 14pt; font-weight: bold; padding-top:10px;">Localização:</p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.264281495372!2d-39.295566386003436!3d-6.35983016398496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a31e5cbfffffff%3A0xe38d5a20afe7d98a!2sGrupo+Esp%C3%ADrita+Chico+Xavier!5e0!3m2!1spt-BR!2sbr!4v1451784159190" 
-                  width="650" 
-                  height="320" 
-                  frameborder="0" 
-                  style="border:0" 
-                  allowfullscreen>
-          </iframe>
-        </div>
-      </div>        
-      <footer>GILDERLAN VAI COLOCAR O COMERCIAL DA EMPRESA DELE AQUI</footer>
     </div>
   </body>
 </html>
