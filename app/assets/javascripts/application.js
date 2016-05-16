@@ -17,9 +17,12 @@
 
 $(document).ready(function(){
   $("#carousel").owlCarousel({
+    autoplay: true,
+    autoplayTimeout: 3500,
+    autoplayHoverPause: true,
+    center: true,
     items: 1,
     loop: true,
-    margin: 10,
-    nav: true
+    margin: 10
   });
 });
