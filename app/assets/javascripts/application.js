@@ -13,16 +13,3 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
-
-
-$(document).ready(function(){
-  $("#carousel").owlCarousel({
-    autoplay: true,
-    autoplayTimeout: 3500,
-    autoplayHoverPause: true,
-    center: true,
-    items: 1,
-    loop: true,
-    margin: 10
-  });
-});

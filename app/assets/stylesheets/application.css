@@ -13,3 +13,30 @@
  *= require_tree .
  *= require_self
  */
+ .owl-carousel {
+   position: relative;
+ }
+
+ .owl-prev{
+   left: 0;
+   background-image: url(arrow-left.png);
+}
+
+ .owl-next{
+   right: 0;
+ }
+
+ .owl-prev, .owl-next {
+   position: absolute;
+   top: 50%;
+   margin-top: -10px;
+ }
+
+ #owl-carousel .owl-item img{
+   display: block;
+   width: 100%;
+   height: auto;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+ }
